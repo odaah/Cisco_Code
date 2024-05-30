@@ -9,8 +9,8 @@
 # Feed the expect script a device list & the collected passwords
 
 
-for device in `cat ~/EA_Code/devices.txt`; do
- ./ea_code_exp.exp $device $password $enable ;
+for device in `cat ~/Code/devices.txt`; do
+ ./code_exp.exp $device $password $enable ;
  done
 
-egrep -A2 "hkg1#.*show" EA_Code_Log.log | egrep -v "\--" | sed 's/#.*//g;s/^.*is //g;s/(.*//g' > EA_Code_Out_Temp
+egrep -A2 "hkg1#.*show" Code_Log.log | egrep -v "\--" | sed 's/#.*//g;s/^.*is //g;s/(.*//g' > Code_Out_Temp
