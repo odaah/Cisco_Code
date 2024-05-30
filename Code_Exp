@@ -7,7 +7,7 @@
  set enablepassword [lindex $argv 2]
 
 # Log results
- log_file -a ~/EA_Code/EA_Code_Log.log
+ log_file -a ~/Code/Code_Log.log
 
 # Announce which device we are working on and at what time
  send_user "\n"
